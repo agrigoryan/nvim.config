@@ -21,11 +21,9 @@ return {
     },
   },
 
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "nordic",
       colorscheme = "catppuccin",
     },
   },
