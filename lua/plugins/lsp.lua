@@ -157,8 +157,8 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
-        -- pyright = {},
         ruff = {},
+        pyright = {},
         ruff_lsp = {},
         rust_analyzer = {},
         ts_ls = {},
