@@ -21,6 +21,7 @@ vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true
+vim.opt.undolevels = 10000
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
@@ -40,20 +41,16 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
-
--- Show which line your cursor is on
-vim.opt.cursorline = true
-
--- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
-
--- Global statusbar
-vim.opt.laststatus = 3
-
--- Tab size
-vim.opt.tabstop = 2
+vim.opt.inccommand = 'split' -- Preview substitutions live, as you type!
+vim.opt.cursorline = true -- Show which line your cursor is on
+vim.opt.scrolloff = 10 -- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.laststatus = 3 -- Global statusbar
+vim.opt.tabstop = 2 -- Tab size
+vim.opt.shiftwidth = 2 -- Indent size
+vim.opt.shiftround = true -- Round indent
+vim.opt.wrap = false -- Disable line wrap
+vim.opt.sidescrolloff = 8 -- Columns of context
+vim.opt.signcolumn = 'yes' -- Always show the signcolumn, otherwise it would shift the text each time
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
