@@ -159,7 +159,6 @@ return {
         gopls = {},
         ruff = {},
         pyright = {},
-        ruff_lsp = {},
         rust_analyzer = {},
         ts_ls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
