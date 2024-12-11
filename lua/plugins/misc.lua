@@ -31,4 +31,10 @@ return {
       end
     end,
   },
+  {
+    'mistweaverco/kulala.nvim',
+    opts = {
+      default_view = 'headers_body',
+    },
+  },
 }

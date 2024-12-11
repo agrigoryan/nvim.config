@@ -22,6 +22,7 @@ return { -- Highlight, edit, and navigate code
       'gosum',
       'json5',
       'rust',
+      'http',
     },
     -- Autoinstall languages that are not installed
     auto_install = true,
