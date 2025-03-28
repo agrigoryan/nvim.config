@@ -77,7 +77,9 @@ return {
     vim.keymap.set('n', '<leader>/', builtin.live_grep, { desc = 'Grep' })
     vim.keymap.set('n', '<leader><space>', builtin.find_files, { desc = 'Find Files (Root Dir)' })
     vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Find Files (Root Dir)' })
+    vim.keymap.set('n', '<leader>p', builtin.find_files, { desc = 'Find Files (Root Dir)' })
     vim.keymap.set('n', '<leader>fr', builtin.oldfiles, { desc = 'Recent' })
+    vim.keymap.set('n', '<leader>r', builtin.oldfiles, { desc = 'Recent' })
     vim.keymap.set('n', '<leader>fg', builtin.git_files, { desc = 'Find Files (git-files)' })
 
     vim.keymap.set('n', '<leader>gc', builtin.git_commits, { desc = 'Commits' })

@@ -13,6 +13,10 @@ return {
   },
   { 'Bilal2453/luvit-meta', lazy = true },
   {
+    'williamboman/mason.nvim',
+    opts = { ensure_installed = { 'goimports' } },
+  },
+  {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {

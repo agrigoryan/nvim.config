@@ -59,6 +59,9 @@ vim.opt.signcolumn = 'yes' -- Always show the signcolumn, otherwise it would shi
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- jj in insert mode to escape
+vim.keymap.set('i', 'jj', '<Esc>')
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
