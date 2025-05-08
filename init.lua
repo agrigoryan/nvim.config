@@ -70,6 +70,9 @@ vim.keymap.set('i', 'jj', '<Esc>')
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+-- show diagnostics
+vim.keymap.set('n', '<leader>xx', vim.diagnostic.open_float, { desc = 'Show diagnostics' })
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
