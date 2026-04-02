@@ -26,8 +26,8 @@ vim.pack.add({
 
   -- LSP
   gh("neovim/nvim-lspconfig"),
-  gh("williamboman/mason.nvim"),
-  gh("williamboman/mason-lspconfig.nvim"),
+  gh("mason-org/mason.nvim"),
+  gh("mason-org/mason-lspconfig.nvim"),
 
   -- Treesitter
   gh("nvim-treesitter/nvim-treesitter"),
