@@ -1,29 +1,28 @@
-return {
-  'folke/snacks.nvim',
-  priority = 1000,
-  lazy = false,
-  opts = {
-    bigfile = { enabled = true },
-    notifier = { enabled = true },
-    quickfile = { enabled = true },
-    statuscolumn = { enabled = true },
-    words = { enabled = true },
-    dashboard = { enabled = true },
-  },
-  keys = {
-    {
-      '<leader>gB',
-      function()
-        Snacks.gitbrowse()
-      end,
-      desc = 'Git Browse',
-    },
-    {
-      '<leader>gg',
-      function()
-        Snacks.lazygit()
-      end,
-      desc = 'Lazygit',
+require("snacks").setup({
+  -- Enabled features
+  dashboard = { enabled = false },
+  notifier = { enabled = true },
+  picker = {
+    sources = {
+      explorer = {
+        ignored = true,
+        hidden = true,
+        watch = true,
+      },
     },
   },
-}
+  explorer = { enabled = true },
+  statuscolumn = { enabled = true },
+  words = { enabled = true },
+  quickfile = { enabled = true },
+  input = { enabled = true },
+  lazygit = { enabled = true },
+  terminal = { enabled = true },
+
+  -- Disabled (animations you had off)
+  scroll = { enabled = false },
+  indent = { enabled = false },
+})
+
+-- Set statuscolumn after snacks is loaded
+vim.opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
